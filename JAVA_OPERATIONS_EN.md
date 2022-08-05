@@ -1,16 +1,10 @@
-This page documents the Java operations which are offered by the Java archive "ediarum.jar" and which extend the functionalities avaible in [Oxygen XML](http://www.oxygenxml.com) for frameworks. The file ediarum.jar is part of the software solution "ediarum" which is a package of three different combinable software solutions and technologies: eXistdb, Oxygen XML Author and ConTeXt. The package and multiple extensions - not the software himself - are developed by TELOTA - an iniatitve for the "Digital Humanities" at the Berlin-Brandenburg Academy of Sciences and Humanities.  [Read the project description for more information](https://www.ediarum.org/).
+# Java operations (english documentation)
 
-### Installation
-
-The file ediarum.jar offers additionals Java operations for the use in an Oxygen XML framework. If you would like to only use these functions you just have to [download the file ediarum.jar](https://github.com/ediarum/ediarum.JAR/blob/master/dist/ediarum.jar) and store it into your framework. Then you have to reference to this JAR file in your Oxygen framework definition in the tab "Classpath". After this you will find the additional Java operations in the list when creating or editing an action.
-
-For people, who are able to read german texts, there is a step-by-step tutorial ["Implementing index functions in Oxygen XML Frameworks" on digiversity](http://digiversity.net/2013/tutorial-indexfunktionen-fuer-oxygen-xml-frameworks/).
-
-### Index functions
+## Index functions
 
 Functions for inserting references from an xml file to a central index file.
 
-#### Insert Register Operation
+### Insert Register Operation
 
 _org.bbaw.telota.ediarum.InsertRegisterOperation_
 
@@ -23,7 +17,7 @@ Opens a dialogue where the user can select an entry from an index. Inserts then 
 | expression | The phrase displayed in the select list (strings are noted in "", attributes start with @, elements with /, kindelements with // and XPath expressions with .), e.g.: /name+", "+/firstname+" "+/biography |
 | element    | The element to be inserted in the xml document, e.g.: `"<persName xmlns='http://www.tei-c.org/ns/1.0' key='" + @id + "' />"`                                                                               |
 
-#### Insert Register At Operation
+### Insert Register At Operation
 
 _org.bbaw.telota.ediarum.InsertRegisterAtOperation_
 
@@ -39,7 +33,7 @@ Opens a dialogue where the user can select an entry from an index. An xml elemen
 | insertPosition | The insert position relative to the node determined by the XPath expression. Can be: Before, Inside as first child, Inside as last child or After.                                                         |
 | schemaAware    | Controlling if the insertion is schema aware or not.                                                                                                                                                       |
 
-#### Insert Register Attribute Operation
+### Insert Register Attribute Operation
 
 _org.bbaw.telota.ediarum.InsertRegisterAttributeOperation_
 
@@ -54,7 +48,7 @@ Opens a dialogue where the user can select an entry from an index. This operatio
 | attribute value                   | Value of this attribute, e.g.: "someText" + @id                                                                                                                                                            |
 | xpath to element of the attribute | A relative XPath expression to the element, starting at the current selected text, e.g.: ./child                                                                                                           |
 
-#### Insert Index Operation
+### Insert Index Operation
 
 _org.bbaw.telota.ediarum.InsertIndexOperation_
 
@@ -76,7 +70,7 @@ Opens a dialogue where the user can select an entry from an index. This operatio
 ***
 
 
-### Insert Link Operation
+## Insert Link Operation
 
 _org.bbaw.telota.ediarum.InsertLinkOperation_
 
@@ -92,7 +86,7 @@ Opens a dialogue that displays the possible link targets in the currently in Oxy
 | element         | The element that will be inserted; the variables $FILEPATH, $FILE_ID, $STARTPREFIX, $STOPPREFIX, $ID can be used, e.g.: <ref xmlns='http://www.tei-c.org/ns/1.0' target='$FILEPATH/#$STARTPREFIX$ID'/> |
 | altern. element | The element that will be inserte if the target ist a whole file; the variables $FILEPATH, $FILE_ID can be used, e.g.: `<ref xmlns='http://www.tei-c.org/ns/1.0' target='$FILEPATH'/>`                  |
 
-### Surround With Elements Operation
+## Surround With Elements Operation
 
 _org.bbaw.telota.ediarum.SurroundWithElementsOperation_
 
@@ -103,7 +97,7 @@ Inserts before and after the selection _differents_ elements in the XML document
 | id        | ID that will be used multiple times in the inserted elements                                               |
 | elements  | The elements before and after the $[SELECTION]; the ID will bei inserted with the variable $[ID] eingefügt |
 
-### Multiple Actions Operation
+## Multiple Actions Operation
 
 _org.bbaw.telota.ediarum.MultipleActionsOperation_
 
@@ -117,7 +111,7 @@ Defines multiple actions, which will be executed automatically one after another
 | fourth action | action-ID of the fourth action |
 | fifth action  | action-ID of the fifth action  |
 
-### Execute Command 
+## Execute Command 
 
 _org.bbaw.telota.ediarum.ExecuteCommandOperation_
 
@@ -127,7 +121,7 @@ Execute an external program.
 | :-------- | :---------------------------- |
 | Command   | Command that will be executed |
 
-### Open URL Operation
+## Open URL Operation
 
 _org.bbaw.telota.ediarum.OpenURLOperation_
 
@@ -136,7 +130,3 @@ Opens a file in an external program (with the system standard program for this t
 | Parameter | Description     |
 | :-------- | :-------------- |
 | URL       | URL of the file |
-
-### Credits
-
-Developed by Martin Fechner, Berlin-Brandenburg Academy of Sciences and Humanities

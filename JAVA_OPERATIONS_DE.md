@@ -1,10 +1,10 @@
-Diese Seite dokumentiert die Javaoperationen, die mit dem Java-Archiv "ediarum.jar" ausgeliefert werden und die die Funktionalitäten in Oxygen XML für Werkzeugeleisten in Frameworks erweitern. Die Datei "ediarum.jar" ist Teil einer Softwarelösung, deren Zusammenstellung und Erweiterung von TELOTA entwickelt wird - einer Initiative für die "Digital Humanities" an der Berlin-Brandenburgischen Akademie der Wissenschaften. [Lesen Sie die Projektbeschreibung für weitere Informationen](https://www.ediarum.org/).
+# Java Operationen (deutsche Dokumentation)
 
-### Indexfunktionen
+## Indexfunktionen
 
 Wie die Indexfunktionen in einem Oxygen XML Framework implementiert werden können, beschreibt auch schritt-für-schritt ein [Tutorial auf digiversity.net](http://digiversity.net/2013/tutorial-indexfunktionen-fuer-oxygen-xml-frameworks/).
 
-#### Insert Register Operation
+### Insert Register Operation
 
 _org.bbaw.telota.ediarum.InsertRegisterOperation_
 
@@ -17,7 +17,7 @@ _org.bbaw.telota.ediarum.InsertRegisterOperation_
 | expression | Der in der Auswahlliste erscheinende Ausdruck mit Sub-Elementen (dabei stehen Strings in "", Attribute beginnen mit @, Elemente mit /, Subelemente mit // und X-Path-Ausdrücke mit .), etwa: /name+", "+/vorname+" "+/lebensdaten |
 | element    | Das an der Textstelle einzufügende Element, etwa: `"<persName xmlns='http://www.tei-c.org/ns/1.0' key='" + @id + "' />"`                                                                                                          |
 
-#### Insert Register At Operation
+### Insert Register At Operation
 
 _org.bbaw.telota.ediarum.InsertRegisterAtOperation_
 
@@ -33,7 +33,7 @@ _org.bbaw.telota.ediarum.InsertRegisterAtOperation_
 | insertPosition | Die Einfügeposition relartiv zum Knoten, der im Parameter "insertLocation" definiert wurde. Kann lauten: Before, Inside as first child, Inside as last child or After. |
 | schemaAware    | Kontrolliert, ob die Einfügung schemakonform ist oder nicht                                                                                                            |
 
-#### Insert Register Attribute Operation
+### Insert Register Attribute Operation
 
 _org.bbaw.telota.ediarum.InsertRegisterAttributeOperation_
 
@@ -48,7 +48,7 @@ _org.bbaw.telota.ediarum.InsertRegisterAttributeOperation_
 | attribute value                   | Der Inhalt des an der Textstelle einzufügenden Attributes, etwa: "etwas Text" + @id                                                                          |
 | xpath to element of the attribute | Ein relativer XPath-Ausdruck des die Textstelle umgebenden Elementes zu dem Element, wo das Attribut eingefügt werden soll: ./child                          |
 
-#### Insert Index Operation
+### Insert Index Operation
 
 _org.bbaw.telota.ediarum.InsertIndexOperation_
 
@@ -70,7 +70,7 @@ _org.bbaw.telota.ediarum.InsertIndexOperation_
 ***
 
 
-### Insert Link Operation
+## Insert Link Operation
 
 _org.bbaw.telota.ediarum.InsertLinkOperation_
 
@@ -86,7 +86,7 @@ _org.bbaw.telota.ediarum.InsertLinkOperation_
 | element         | Das einzufügende Element, mit dem $-Zeichen können $FILEPATH, $FILE_ID, $STARTPREFIX, $STOPPREFIX, $ID benutzt werden, etwa: <ref xmlns='http://www.tei-c.org/ns/1.0' target='$FILEPATH/#$STARTPREFIX$ID'/> |
 | altern. element | Das einzufügende Element wenn auf eine ganze Datei verwiesen wird, mit dem $-Zeichen können $FILEPATH, $FILE_ID benutzt werden, etwa: `<ref xmlns='http://www.tei-c.org/ns/1.0' target='$FILEPATH'/>`       |
 
-### Surround With Elements Operation
+## Surround With Elements Operation
 
 _org.bbaw.telota.ediarum.SurroundWithElementsOperation_
 
@@ -97,7 +97,7 @@ Fügt vor und hinter der Markierung verschiedene Elemente ein.
 | id        | Eine in den Elementen mehrfach zu verwendende ID                                                                          |
 | elements  | Die vor und hinter der Markierung einzufügenden Elemente durch '$[SELECTION]' getrennt, die ID wird mit '$[ID]' eingefügt |
 
-### Multiple Actions Operation
+## Multiple Actions Operation
 
 _org.bbaw.telota.ediarum.MultipleActionsOperation_
 
@@ -111,7 +111,7 @@ Definiert mehrere Aktionen, die nacheinander ausgeführt werden.
 | fourth action | Die ID der vierten Aktion |
 | fifth action  | Die ID der fünften Aktion |
 
-### Execute Command 
+## Execute Command 
 
 _org.bbaw.telota.ediarum.ExecuteCommandOperation_
 
@@ -121,7 +121,7 @@ Führt ein externes Programm aus.
 | :-------- | :------------------------- |
 | Command   | Das auszuführende Kommando |
 
-### Open URL Operation
+## Open URL Operation
 
 _org.bbaw.telota.ediarum.OpenURLOperation_
 
@@ -130,7 +130,3 @@ _org.bbaw.telota.ediarum.OpenURLOperation_
 | Parameter | Beschreibung                   |
 | :-------- | :----------------------------- |
 | URL       | Die URL der zu öffnenden Datei |
-
-### Credits
-
-Entwickelt von Martin Fechner, Berlin-Brandenburgische Akademie der Wissenschaften
