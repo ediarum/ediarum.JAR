@@ -1,0 +1,13 @@
+abstract: "ediarum.JAR is a Java library designed for the oXygen XML-Editor and part of ediarum"
+authors:
+  - given-names: Martin
+    family-names: Fechner
+    orcid: 'https://orcid.org/0000-0001-9233-0653'
+cff-version: 1.2.0
+date-released: "2023-05-16"
+license: "LGPL-3.0-or-later"
+message: "If you use this software, please cite it using these metadata."
+repository-code: "https://github.com/ediarum/ediarum.JAR"
+title: ediarum.JAR
+type: software
+version: 3.2.1
