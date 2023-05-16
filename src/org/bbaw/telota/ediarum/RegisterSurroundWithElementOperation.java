@@ -75,7 +75,7 @@ public class RegisterSurroundWithElementOperation implements AuthorOperation{
 		new ArgumentDescriptor(
 				ARGUMENT_NAMESPACES,
 				ArgumentDescriptor.TYPE_STRING,
-				"An whitespace separated list of namespace declarations with QNames before a colon, e.g.: tei:http://www.tei-c.org/ns/1.0"),
+				"An whitespace separated list of namespace declarations with QNames before a colon, e.g.: tei:http://www.tei-c.org/ns/1.0. The namespace parameter mustn't be empty."),
 		new ArgumentDescriptor(
 				ARGUMENT_EXPRESSION,
 				ArgumentDescriptor.TYPE_STRING,
