@@ -70,9 +70,9 @@ Opens a dialogue where the user can select an entry from an index. This operatio
 ***
 
 
-## Insert Link Operation
+## Insert Reference For Link Target Operation
 
-_org.bbaw.telota.ediarum.InsertLinkOperation_
+_org.bbaw.telota.ediarum.InsertReferenceForLinkTargetOperation_
 
 Opens a dialogue that displays the possible link targets in the currently in Oxygen XML opened XML files. Inserts a XML element with an corresponding filepath and ID.
 

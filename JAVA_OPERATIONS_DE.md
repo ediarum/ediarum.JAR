@@ -70,9 +70,9 @@ _org.bbaw.telota.ediarum.InsertIndexOperation_
 ***
 
 
-## Insert Link Operation
+## Insert Reference For Link Target Operation
 
-_org.bbaw.telota.ediarum.InsertLinkOperation_
+_org.bbaw.telota.ediarum.InsertReferenceForLinkTargetOperation_
 
 Öffnet einen Dialog, der die möglichen Verweisziele in den geöffneten Dateien anzeigt. Bei Bestätigung wird an der Markierung ein entsprechendes Link-Element eingefügt.
 
