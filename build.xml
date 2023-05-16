@@ -26,6 +26,14 @@
 		<echo>Current version: ${jar.version-with-build}</echo> 
 	</target>
 
+	<target name="increase-patch" description="increase the patch number">
+	    <echo message="increase patch number..."/>
+		<propertyfile file="build.properties">
+			<entry key="jar.build.patch" type="int" operation="+" value="1" pattern="0" /> 
+		</propertyfile>
+		<echo>Current version: ${jar.version}</echo>
+	</target>
+
 	<target name="increase-minor" description="increase the minor number">
 	    <echo message="increase minor number..."/>
 		<propertyfile file="build.properties">
