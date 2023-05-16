@@ -37,6 +37,19 @@ After this you will find the additional Java operations in the list when creatin
 
 There is a step-by-step tutorial in german: ["Implementing index functions in Oxygen XML Frameworks" on digiversity](http://digiversity.net/2013/tutorial-indexfunktionen-fuer-oxygen-xml-frameworks/).
 
+## Development
+
+To build a new jar-File use Apache ANT (<https://ant.apache.org/>)
+
+```bash
+ant compile
+```
+
+The following libraries must be included:
+
+- commons-codec.jar from Apache Commons <https://commons.apache.org/proper/commons-codec/>
+- oxygen.jar from the Oxygen XML SDK: <https://www.oxygenxml.com/oxygen_sdk.html>
+
 ## License
 
 ediarum.JAR is free software: you can redistribute it and/or modify

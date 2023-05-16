@@ -4,7 +4,7 @@
 .vscode
 /bin/
 /build/
-/lib/
+/lib/private
 /META-INF/
 /temp/
 /WorkspaceAccess/
